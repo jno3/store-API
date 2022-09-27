@@ -3,9 +3,11 @@ dotenv.config();
 
 import express from 'express';
 import mongoose from 'mongoose';
+import 'express-async-errors';
 
 import notFoundMiddleware from './middleware/not-found.js';
 import errorHandlerMiddleware from './middleware/error-handler.js';
+
 
 const app = express();
 const port = process.env.PORT;
